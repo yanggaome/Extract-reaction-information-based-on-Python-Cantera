@@ -9,10 +9,14 @@ Email: yanggao.me@gmail.com
 including: reaction rate parameters, third-body species and efficiencies, fall-off parameters
 
 ## How to call ##
-get_reaction_info(g, i):
+get_reaction_info(g, i)
+
 g is the initialized chemistry
+
 e.g. g = ct.Solution('h2.cti')
+
 i the reaction index - 1 (Python is 0 based)
+
 return reac
 
 ## Reaction rate information ##
