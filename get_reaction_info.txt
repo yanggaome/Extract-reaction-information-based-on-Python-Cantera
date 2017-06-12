@@ -1,0 +1,121 @@
+C R1: H + O2 <=> O + OH Reaction type: 1
+C forward temperature dependent reaction rate
+      RF = +3.547000000000000E+15*T**-4.060000000000000E-01*EXP(-8.352941557097241E+03/T)
+C
+C R2: H2 + O <=> H + OH Reaction type: 1
+C forward temperature dependent reaction rate
+      RF = +5.080000000000000E+04*T**+2.670000000000000E+00*EXP(-3.165251062964133E+03/T)
+C
+C R3: H2 + OH <=> H + H2O Reaction type: 1
+C forward temperature dependent reaction rate
+      RF = +2.160000000000000E+08*T**+1.510000000000000E+00*EXP(-1.726043107466928E+03/T)
+C
+C R4: H2O + O <=> 2 OH Reaction type: 1
+C forward temperature dependent reaction rate
+      RF = +2.970000000000000E+06*T**+2.020000000000000E+00*EXP(-6.743142169112780E+03/T)
+C
+C R5: H2 + M <=> 2 H + M Reaction type: 2
+C have third-body
+C forward temperature dependent reaction rate
+      RF = +4.577000000000000E+19*T**-1.400000000000000E+00*EXP(-5.252605817999940E+04/T)
+C Third body information
+      Number of third-body enhanced species 2
+      Species index 0 efficiency 2.5 
+      Species index 4 efficiency 12 
+C
+C R6: 2 O + M <=> O2 + M Reaction type: 2
+C have third-body
+C forward temperature dependent reaction rate
+      RF = +6.165000000000000E+15*T**-5.000000000000000E-01*EXP(-0.000000000000000E+00/T)
+C Third body information
+      Number of third-body enhanced species 2
+      Species index 0 efficiency 2.5 
+      Species index 4 efficiency 12 
+C
+C R7: H + O + M <=> OH + M Reaction type: 2
+C have third-body
+C forward temperature dependent reaction rate
+      RF = +4.714000000000000E+18*T**-1.000000000000000E+00*EXP(-0.000000000000000E+00/T)
+C Third body information
+      Number of third-body enhanced species 2
+      Species index 0 efficiency 2.5 
+      Species index 4 efficiency 12 
+C
+C R8: H + OH + M <=> H2O + M Reaction type: 2
+C have third-body
+C forward temperature dependent reaction rate
+      RF = +3.800000000000000E+22*T**-2.000000000000000E+00*EXP(-0.000000000000000E+00/T)
+C Third body information
+      Number of third-body enhanced species 2
+      Species index 0 efficiency 2.5 
+      Species index 4 efficiency 12 
+C
+C R9: H + O2 (+M) <=> HO2 (+M) Reaction type: 4
+C fall off
+C forward temperature dependent reaction rate
+      RF = +1.475000000000000E+12*T**+6.000000000000000E-01*EXP(-0.000000000000000E+00/T)
+C Third body information
+      Number of third-body enhanced species 3
+      Species index 0 efficiency 2 
+      Species index 4 efficiency 11 
+      Species index 1 efficiency 0.78 
+C Troe 6-parameters
+      Low pressure limit ABE: +6.366000000000000E+20 -1.720000000000000E+00 +2.640896276380885E+02
+      alpha: +8.000000000000000E-01 T3: +1.000000000000000E-30 T1: +1.000000000000000E+30
+C
+C R10: H + HO2 <=> H2 + O2 Reaction type: 1
+C forward temperature dependent reaction rate
+      RF = +1.660000000000000E+13*T**+0.000000000000000E+00*EXP(-4.141497018790909E+02/T)
+C
+C R11: H + HO2 <=> 2 OH Reaction type: 1
+C forward temperature dependent reaction rate
+      RF = +7.079000000000000E+13*T**+0.000000000000000E+00*EXP(-1.484497716334530E+02/T)
+C
+C R12: HO2 + O <=> O2 + OH Reaction type: 1
+C forward temperature dependent reaction rate
+      RF = +3.250000000000000E+13*T**+0.000000000000000E+00*EXP(-0.000000000000000E+00/T)
+C
+C R13: HO2 + OH <=> H2O + O2 Reaction type: 1
+C forward temperature dependent reaction rate
+      RF = +2.890000000000000E+13*T**+0.000000000000000E+00*EXP(+2.501001237350038E+02/T)
+C
+C R14: 2 HO2 <=> H2O2 + O2 Reaction type: 1
+C forward temperature dependent reaction rate
+      RF = +4.200000000000000E+14*T**+0.000000000000000E+00*EXP(-6.029576826142486E+03/T)
+C
+C R15: 2 HO2 <=> H2O2 + O2 Reaction type: 1
+C forward temperature dependent reaction rate
+      RF = +1.300000000000000E+11*T**+0.000000000000000E+00*EXP(+8.198956370250337E+02/T)
+C
+C R16: H2O2 (+M) <=> 2 OH (+M) Reaction type: 4
+C fall off
+C forward temperature dependent reaction rate
+      RF = +2.951000000000000E+14*T**+0.000000000000000E+00*EXP(-2.437092352612925E+04/T)
+C Third body information
+      Number of third-body enhanced species 2
+      Species index 0 efficiency 2.5 
+      Species index 4 efficiency 12 
+C Troe 6-parameters
+      Low pressure limit ABE: +1.202000000000000E+17 +0.000000000000000E+00 +2.289649020109190E+04
+      alpha: +5.000000000000000E-01 T3: +1.000000000000000E-30 T1: +1.000000000000000E+30
+C
+C R17: H + H2O2 <=> H2O + OH Reaction type: 1
+C forward temperature dependent reaction rate
+      RF = +2.410000000000000E+13*T**+0.000000000000000E+00*EXP(-1.997781672490876E+03/T)
+C
+C R18: H + H2O2 <=> H2 + HO2 Reaction type: 1
+C forward temperature dependent reaction rate
+      RF = +4.820000000000000E+13*T**+0.000000000000000E+00*EXP(-4.000595540630343E+03/T)
+C
+C R19: H2O2 + O <=> HO2 + OH Reaction type: 1
+C forward temperature dependent reaction rate
+      RF = +9.550000000000000E+06*T**+2.000000000000000E+00*EXP(-1.997781672490876E+03/T)
+C
+C R20: H2O2 + OH <=> H2O + HO2 Reaction type: 1
+C forward temperature dependent reaction rate
+      RF = +1.000000000000000E+12*T**+0.000000000000000E+00*EXP(-0.000000000000000E+00/T)
+C
+C R21: H2O2 + OH <=> H2O + HO2 Reaction type: 1
+C forward temperature dependent reaction rate
+      RF = +5.800000000000000E+14*T**+0.000000000000000E+00*EXP(-4.809269381359018E+03/T)
+C
