@@ -8,40 +8,44 @@ Email: yanggao.me@gmail.com
 
 including: reaction rate parameters, third-body species and efficiencies, fall-off parameters
 
-1. reac.RA, reac.RB, reac.RE : forward temperature ABE factors
+## reaction rate information##
+reac.RA, reac.RB, reac.RE : forward temperature ABE factors
 
-  RE is converted and divided by RU, so
+RE is converted and divided by RU, so
 
-  kf = A*T**B*exp(-E/T)
+kf = A*T**B*exp(-E/T)
 
-  RA is kmole based, and converted to mole based in the test_get_reaction_info.py based on reaction order
+RA is kmole based, and converted to mole based in the test_get_reaction_info.py based on reaction order
 
-2. reac.ITHB: number of enhanced third-body species, type: int
+##Third body information##
+reac.ITHB: number of enhanced third-body species, type: int
 
-  reac.NKTB: indices of enhanced third-body species, type: list
+reac.NKTB: indices of enhanced third-body species, type: list
 
-  reac.AIK: efficiencies of enhanced third-body species, type: list
+reac.AIK: efficiencies of enhanced third-body species, type: list
 
-3. reac.Fall: first 3-> low pressure limit ABE, 4th-7th: alpha, T3, T1, T2 (T2 is only for 7 parameters Troe)
+##Fall reaction information##
 
-4. reaction type flag:
+reac.Fall: first 3-> low pressure limit ABE, 4th-7th: alpha, T3, T1, T2 (T2 is only for 7 parameters Troe)
 
-  reac.isReversible = False
+##reaction type flag##
 
-  reac.isThirdbody = False
+reac.isReversible = False
 
-  reac.isFalloff = False
+reac.isThirdbody = False
 
-  reac.isChemical = False
+reac.isFalloff = False
 
-  reac.isPLOG = False
+reac.isChemical = False
 
-  reac.isSimple = False
+reac.isPLOG = False
 
-  reac.isLindemann = False
+reac.isSimple = False
 
-  reac.isTroe = False
+reac.isLindemann = False
 
-  reac.isTroe6 = False
+reac.isTroe = False
 
-  reac.isTroe7 = False
+reac.isTroe6 = False
+
+reac.isTroe7 = False
