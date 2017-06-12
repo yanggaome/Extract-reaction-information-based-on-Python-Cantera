@@ -1,7 +1,6 @@
 # Python-functions-based-on-Cantera
 
-Author: Yang 
-
+Author: Yang Gao
 
 Email: yanggao.me@gmail.com
 
