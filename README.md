@@ -8,6 +8,14 @@ Email: yanggao.me@gmail.com
 
 including: reaction rate parameters, third-body species and efficiencies, fall-off parameters
 
+## Reaction types supported ##
+
+Only support simple reactions, third-body reactions, and fall-off reactions.
+
+Do not support SRI, PLOG, CHEBY, and chemically activated reactions so far.
+
+See **Issue**
+
 ## How to call ##
 **Function:** _get_reaction_info(g, i)_
 
