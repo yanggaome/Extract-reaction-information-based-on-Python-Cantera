@@ -8,7 +8,7 @@ Email: yanggao.me@gmail.com
 
 including: reaction rate parameters, third-body species and efficiencies, fall-off parameters
 
-## reaction rate information##
+## reaction rate information ##
 reac.RA, reac.RB, reac.RE : forward temperature ABE factors
 
 RE is converted and divided by RU, so
