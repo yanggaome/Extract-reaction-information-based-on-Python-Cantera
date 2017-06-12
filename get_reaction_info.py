@@ -54,6 +54,12 @@ class ReactionInfo:
         # Note that index starts from 0
         self.Fall = []
 
+        # PLOG
+        self.NPLG = -1
+        self.P_plog = []
+        self.A_plog = []
+        self.B_plog = []
+        self.E_plog = []
 
 # function to get reaction information
 def get_reaction_info(g, i):
@@ -176,7 +182,17 @@ def get_reaction_info(g, i):
             reac.Fall.append(t3)
             reac.Fall.append(t1)
             reac.Fall.append(t2)
+    elif R_type == 5:
+        reac.isPLOG = True
+        reac.NPLG = len(r1.rates)
+        for n in range(0, reac.NPLG):
+            rate_plog = r1.rates[n]
+            reac.P_plog.append(rate_plog[0])
+            reac.A_plog.append(rate_plog[1].pre_exponential_factor)
+            reac.B_plog.append(rate_plog[1].temperature_exponent)
+            reac.E_plog.append(rate_plog[1].activation_energy / ruc)
+
     else:
-        print ('Unknown reaction type, no supported!')
+        print ('Unknown reaction type, not supported!')
         return 0
     return reac

@@ -28,7 +28,7 @@ import sys
 from get_reaction_info import get_reaction_info
 
 # initialize the chemistry, save in g
-g = ct.Solution('h2.cti')
+g = ct.Solution('h2-plog.cti')
 
 # stoichiometric coefficients
 # positive numbers
@@ -118,7 +118,17 @@ for i in range(0, II):
         if reac.isTroe7 :
             file.write('C Troe 7-parameters\n      Low pressure limit ABE: %+.15E %+.15E %+.15E\n' % (A_low, B_low, E_low))
             file.write('      alpha: %+.15E T3: %+.15E T1: %+.15E T2: %+.15E\n' % (reac.Fall[3], reac.Fall[4], reac.Fall[5], reac.Fall[6] ))
-
+    elif R_type == 5:
+        file.write('C PLOG\n')
+        # convert list to array
+        N_Plog = reac.NPLG
+        P_plog = np.array(reac.P_plog)
+        A_high = np.array(reac.A_plog)*Convert_A
+        B_high = np.array(reac.B_plog)
+        E_high = np.array(reac.E_plog)
+        for n in range (0, N_Plog):
+            file.write('      P = %g (Pa)\n' % (P_plog[n]))
+            file.write('      RF = %+.15E*T**%+.15E*EXP(%+.15E/T)\n' % (A_high[n], B_high[n], -E_high[n]))
     else:
         print('Unknown reaction type, not supported\n')
         sys.exit()
