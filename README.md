@@ -26,7 +26,7 @@ RE is converted and divided by RU, so
 
 kf = A*T**B*exp(-E/T)
 
-** RA is kmole based, and converted to mole based in the _test_get_reaction_info.py_ based on reaction order **
+**RA is kmole based, and converted to mole based in the _test_get_reaction_info.py_ based on reaction order**
 
 ## Third body information ##
 reac.ITHB: number of enhanced third-body species, type: int
