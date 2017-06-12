@@ -9,7 +9,7 @@ Email: yanggao.me@gmail.com
 including: reaction rate parameters, third-body species and efficiencies, fall-off parameters
 
 ## How to call ##
-Function: _get_reaction_info(g, i)_
+**Function:** _get_reaction_info(g, i)_
 
 g is the initialized chemistry
 
@@ -19,9 +19,9 @@ i the reaction index - 1 (Python is 0 based)
 
 return reac
 
-Test script: _test_get_reaction_info.py_
+**Test script:** _test_get_reaction_info.py_
 
-Output file: _get_reaction_info.txt_
+**Output file:** _get_reaction_info.txt_
 
 ## Reaction rate information ##
 reac.RA, reac.RB, reac.RE : forward temperature ABE factors
