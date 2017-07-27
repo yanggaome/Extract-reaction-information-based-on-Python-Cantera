@@ -1,4 +1,4 @@
-# Python-functions-based-on-Cantera
+# A Python function to extract all the reaction information based on Cantera
 
 Author: Yang Gao
 
